@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Welcome</title>
+
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="app">
+			<div class="app-box">
+				<center>
+					<img v-bind:src=imgUrl>
+					<div class="w-status">
+						The weather outside is {{weather}}.
+					</div>
+					<div>
+						The current temperature is {{temperature}} Fahrenheit.
+					</div>
+				</center>
+			</div>
+			<label class="error">Err{{error}}</label>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
